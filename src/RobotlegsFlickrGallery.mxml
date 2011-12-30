@@ -11,13 +11,12 @@
 	 joelhooks@gmail.com
 -->
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
-               xmlns:s="library://ns.adobe.com/flex/spark"
-               xmlns:rl="http://ns.robotlegs.org/flex/rl2"
-               xmlns:view="robotlegs.bender.demos.imagegallery.view.*"
-               xmlns:imagegallery="robotlegs.bender.demos.imagegallery.*"
-               xmlns:components="robotlegs.bender.demos.imagegallery.view.components.*"
-               maxWidth="520"
-               viewSourceURL="srcview/index.html">
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:rl="http://ns.robotlegs.org/flex/rl2"
+			   xmlns:view="robotlegs.bender.demos.imagegallery.view.*"
+			   xmlns:imagegallery="robotlegs.bender.demos.imagegallery.*"
+			   xmlns:components="robotlegs.bender.demos.imagegallery.view.components.*"
+			   width="520" height="680" maxWidth="520" viewSourceURL="srcview/index.html">
 
 	<s:layout>
 		<s:VerticalLayout paddingBottom="10"
