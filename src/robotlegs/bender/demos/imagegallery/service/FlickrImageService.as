@@ -17,13 +17,11 @@ package robotlegs.bender.demos.imagegallery.service
 	import com.adobe.webapis.flickr.methodgroups.Photos;
 	import com.adobe.webapis.flickr.methodgroups.helpers.PhotoSearchParams;
 
-	import flash.events.Event;
-
 	import robotlegs.bender.demos.imagegallery.base.BaseActor;
 
-	import robotlegs.bender.demos.imagegallery.events.GalleryEvent;
 	import robotlegs.bender.demos.imagegallery.model.vo.Gallery;
 	import robotlegs.bender.demos.imagegallery.model.vo.GalleryImage;
+	import robotlegs.bender.demos.imagegallery.view.events.GalleryEvent;
 
 	public class FlickrImageService extends BaseActor implements IGalleryImageService
 	{
@@ -57,7 +55,7 @@ package robotlegs.bender.demos.imagegallery.service
 			p.text = searchTerm;
 			p.per_page = 20;
 			p.content_type = 1;
-			p.media = "photo"
+			p.media = "photo";
 			p.sort = "date-posted-desc";
 			this.photos.searchWithParamHelper(p);
 		}

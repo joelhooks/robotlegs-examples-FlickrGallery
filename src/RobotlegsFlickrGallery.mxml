@@ -13,8 +13,9 @@
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
                xmlns:s="library://ns.adobe.com/flex/spark"
                xmlns:rl="http://ns.robotlegs.org/flex/rl2"
-               xmlns:components="robotlegs.bender.demos.imagegallery.view.components.*"
+               xmlns:view="robotlegs.bender.demos.imagegallery.view.*"
                xmlns:imagegallery="robotlegs.bender.demos.imagegallery.*"
+               xmlns:components="robotlegs.bender.demos.imagegallery.view.components.*"
                maxWidth="520"
                viewSourceURL="srcview/index.html">
 
@@ -33,11 +34,11 @@
 
 	<components:GalleryHeader/>
 
-	<components:GallerySearch id="search"
+	<view:GallerySearch id="search"
 							  width="100%"
 							  visible="false"
 							  includeInLayout="false"/>
 
-	<components:GalleryView id="gallery"/>
+	<view:GalleryView id="gallery"/>
 
 </s:Application>
