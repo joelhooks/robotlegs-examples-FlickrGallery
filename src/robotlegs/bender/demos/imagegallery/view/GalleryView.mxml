@@ -14,8 +14,8 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009"
 	xmlns:s="library://ns.adobe.com/flex/spark"
 	width="500" height="600"
-	creationComplete="creationCompleteHandler(event)" xmlns:display="com.joelhooks.display.*" xmlns:components="robotlegs.bender.demos.imagegallery.view.components.*"
-	implements="robotlegs.bender.demos.imagegallery.view.components.IGalleryView">
+	creationComplete="creationCompleteHandler(event)" xmlns:display="com.joelhooks.display.*" xmlns:components="robotlegs.bender.demos.imagegallery.view.api.*"
+	implements="robotlegs.bender.demos.imagegallery.view.api.IGalleryView" xmlns:view="robotlegs.bender.demos.imagegallery.view.*">
 
 	<s:layout>
 		<s:BasicLayout/>
@@ -23,10 +23,10 @@
 
 	<fx:Script>
 		<![CDATA[
-		import mx.collections.ArrayCollection;
-		import mx.events.FlexEvent;
-
-		import robotlegs.bender.demos.imagegallery.events.GalleryImageEvent;
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			
+			import robotlegs.bender.demos.imagegallery.view.events.GalleryImageEvent;
 
 		private var _dataProvider:ArrayCollection;
 		private var _imageSource:String;
@@ -100,6 +100,6 @@
 		</s:DataGroup>
 		<s:HScrollBar id="thumbScrollBar" viewport="{this.dgThumbnails}" width="500" smoothScrolling="true"/>
 	</s:Group>
-	<components:GalleryLabel id="galleryLabel" color="#FFFFFF" top="5" right="5" visible="false" includeInLayout="false" />
+	<view:GalleryLabel id="galleryLabel" color="#FFFFFF" top="5" right="5" visible="false" includeInLayout="false" />
 	<s:Label fontSize="9" text="all images © their owner" width="100%" textAlign="right" bottom="100" color="#FFFFFF" paddingRight="5"/>
 </s:Group>

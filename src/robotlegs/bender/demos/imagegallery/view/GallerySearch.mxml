@@ -11,13 +11,13 @@
 	joelhooks@gmail.com
 -->
 <s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
-         implements="robotlegs.bender.demos.imagegallery.view.components.IGallerySearch">
+         implements="robotlegs.bender.demos.imagegallery.view.api.IGallerySearch">
 	<s:layout>
 		<s:HorizontalLayout/>
 	</s:layout>
 	<fx:Script>
 		<![CDATA[
-		import robotlegs.bender.demos.imagegallery.events.GallerySearchEvent;
+			import robotlegs.bender.demos.imagegallery.view.events.GallerySearchEvent;
 
 		public function handleSearch():void
 		{
