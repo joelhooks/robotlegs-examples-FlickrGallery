@@ -19,8 +19,8 @@
 
 	<fx:Script>
 		<![CDATA[
-		import robotlegs.bender.demos.imagegallery.events.GalleryImageEvent;
-		import robotlegs.bender.demos.imagegallery.model.vo.GalleryImage;
+			import robotlegs.bender.demos.imagegallery.model.vo.GalleryImage;
+			import robotlegs.bender.demos.imagegallery.view.events.GalleryImageEvent;
 
 		[Bindable]
 		protected var image:GalleryImage;

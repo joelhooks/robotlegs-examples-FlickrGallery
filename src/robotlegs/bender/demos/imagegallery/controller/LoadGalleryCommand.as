@@ -1,7 +1,7 @@
 package robotlegs.bender.demos.imagegallery.controller
 {
-	import robotlegs.bender.demos.imagegallery.events.GalleryEvent;
 	import robotlegs.bender.demos.imagegallery.service.IGalleryImageService;
+	import robotlegs.bender.demos.imagegallery.view.events.GalleryEvent;
 
 	public class LoadGalleryCommand
 	{

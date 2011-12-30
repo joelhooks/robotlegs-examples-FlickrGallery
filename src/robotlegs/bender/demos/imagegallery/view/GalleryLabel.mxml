@@ -11,7 +11,7 @@
 	joelhooks@gmail.com
 -->
 <s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/halo" width="100%"
-         implements="robotlegs.bender.demos.imagegallery.view.components.IGalleryLabel">
+         implements="robotlegs.bender.demos.imagegallery.view.api.IGalleryLabel">
 	<s:layout>
 		<s:HorizontalLayout verticalAlign="middle"/>
 	</s:layout>
