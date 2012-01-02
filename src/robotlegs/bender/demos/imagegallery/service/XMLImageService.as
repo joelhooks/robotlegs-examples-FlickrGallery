@@ -3,13 +3,12 @@ package robotlegs.bender.demos.imagegallery.service
 	import mx.rpc.AsyncToken;
 	import mx.rpc.Responder;
 	import mx.rpc.http.HTTPService;
-
-	import robotlegs.bender.demos.imagegallery.events.GalleryEvent;
+	import robotlegs.bender.demos.imagegallery.base.BaseActor;
+	import robotlegs.bender.demos.imagegallery.view.events.GalleryEvent;
 	import robotlegs.bender.demos.imagegallery.model.vo.Gallery;
 	import robotlegs.bender.demos.imagegallery.model.vo.GalleryImage;
-	import org.robotlegs.mvcs.Service;
 
-	public class XMLImageService extends Service implements IGalleryImageService
+	public class XMLImageService extends BaseActor implements IGalleryImageService
 	{
 		protected static const BASE_URL:String = "assets/gallery/";
 
@@ -51,7 +50,7 @@ package robotlegs.bender.demos.imagegallery.service
 				gallery.photos.addItem( photo );
 			}
 
-			dispatchEvent(new GalleryEvent(GalleryEvent.GALLERY_LOADED, gallery));
+			dispatch(new GalleryEvent(GalleryEvent.GALLERY_LOADED, gallery));
 		}
 
 		protected function handleServiceFault(event:Object):void
