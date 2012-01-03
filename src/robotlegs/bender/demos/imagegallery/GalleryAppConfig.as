@@ -1,16 +1,14 @@
 package robotlegs.bender.demos.imagegallery
 {
-	import flash.display.DisplayObjectContainer;
-
 	import org.swiftsuspenders.Injector;
 
 	import robotlegs.bender.core.api.*;
 	import robotlegs.bender.demos.imagegallery.controller.*;
-	import robotlegs.bender.demos.imagegallery.view.events.*;
 	import robotlegs.bender.demos.imagegallery.model.GalleryModel;
 	import robotlegs.bender.demos.imagegallery.service.*;
 	import robotlegs.bender.demos.imagegallery.view.*;
 	import robotlegs.bender.demos.imagegallery.view.api.*;
+	import robotlegs.bender.demos.imagegallery.view.events.*;
 	import robotlegs.bender.extensions.eventCommandMap.api.IEventCommandMap;
 	import robotlegs.bender.extensions.mediatorMap.api.IMediatorMap;
 
@@ -21,9 +19,6 @@ package robotlegs.bender.demos.imagegallery
 
 		[Inject]
 		public var commandMap:IEventCommandMap;
-
-		[Inject]
-		public var contextView:DisplayObjectContainer;
 
 		[Inject]
 		public var injector:Injector;
